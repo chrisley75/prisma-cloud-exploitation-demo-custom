@@ -1,0 +1,35 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Spring Boot Web App
+  description: A sample Spring Boot Web App vulnerable for Spring4Shell
+  contact:
+    name: Swagger API Team
+host: "*"
+basePath: /
+schemes:
+  - http
+paths:
+  /:
+    get:
+      description: Apache Tomcat default page
+      produces:
+        - text/html
+      responses:
+        '200':
+          description: Some html stuff.
+  /helloworld/greeting:
+    get:
+      description: Dummy REST API Endpoint
+      produces:
+        - text/html
+      responses:
+        '200':
+          description: Some response.
+    post:
+      description: Dummy REST API Endpoint
+      produces:
+        - text/html
+      responses:
+        '200':
+          description: Some response.
